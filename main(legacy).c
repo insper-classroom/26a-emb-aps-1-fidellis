@@ -8,26 +8,80 @@
 #include "tft_lcd_ili9341/touch_resistive/touch_resistive.h"
 
 #include "image_bitmap.h"           //Header com os bitmaps dos botões
-#include "feedback.h"               //Header com as definições de LEDs, Botões e Sons
-
-#include "genius.h"               //Header com a lógica do jogo
 
 // Propriedades do LCD
 #define SCREEN_ROTATION 1           // 0 = RETRATO, 1 = PAISAGEM
 const int width = 320;             // Variável global definida em gfx_ili9341.c que armazena a largura da tela
 const int height = 240;            // Variável global definida em gfx_ili9341.c que armazena a altura da tela
 
-void core_1_entry() {
-    genius_core1_main(); // O Core 1 agora roda exclusivamente a logica do genius
-}main copy
+// Pinos do motor de passo
+#define A 3
+#define B 7
+#define C 8
+#define D 9
+
+// Sequência full-step
+const int passos[4][4] = {
+    {1, 1, 0, 0},
+    {0, 1, 1, 0},
+    {0, 0, 1, 1},
+    {1, 0, 0, 1},
+};
+
+#define MOTOR_INTERVAL 1   // 1 * 1ms = 1ms por passo
+#define ANIM_INTERVAL 4    // 4 * 1ms por frame
+
+// Avança o motor um passo na direção indicada
+void step_motor(int direction, int *motorStep) {
+    if (direction == 1)                     // esquerda = anti-horário
+        *motorStep = (*motorStep + 1) % 4;
+    else if (direction == 2)               // direita = horário
+        *motorStep = (*motorStep + 3) % 4;   // equivale a -1 mod 4
+
+    gpio_put(A, passos[*motorStep][0]);
+    gpio_put(B, passos[*motorStep][1]);
+    gpio_put(C, passos[*motorStep][2]);
+    gpio_put(D, passos[*motorStep][3]);
+}
+
+// Desliga todas as bobinas do motor
+void stop_motor() {
+    gpio_put(A, 0); gpio_put(B, 0);
+    gpio_put(C, 0); gpio_put(D, 0);
+}
+
+// Desenha a animação do botão esquerdo conforme o frame
+void drawLeftAnim(int state) {
+    // Limpa área que cobre os dois frames da esquerda
+    gfx_fillRect(122, 67, 70, 85, 0x0000);
+
+    if (state == 0)
+        gfx_drawBitmap(126, 67,  image_left_anim_1, 67, 26, 0xFFFF);
+    else
+        gfx_drawBitmap(122, 121, image_left_anim_2, 68, 27, 0xFFFF);
+}
+
+// Desenha a animação do botão direito conforme o frame
+void drawRightAnim(int state) {
+    // Limpa área que cobre os dois frames da direita
+    gfx_fillRect(129, 67, 70, 80, 0x0000);
+
+    if (state == 0)
+        gfx_drawBitmap(129, 67,  image_right_anim_1, 67, 34, 0xFFFF);
+    else
+        gfx_drawBitmap(130, 114, image_right_anim_2, 67, 32, 0xFFFF);
+}
 
 int main() {
     stdio_init_all();
 
-    multicore_launch_core1(core_1_entry);
+    //### Motor de passo
+    gpio_init(A); gpio_set_dir(A, GPIO_OUT);
+    gpio_init(B); gpio_set_dir(B, GPIO_OUT);
+    gpio_init(C); gpio_set_dir(C, GPIO_OUT);
+    gpio_init(D); gpio_set_dir(D, GPIO_OUT);
 
-    // Inicializa LEDs, Botões (com interrupção) e Buzzer
-    init_feedback_hardware();
+    //### LCD
     LCD_initDisplay();
     LCD_setRotation(SCREEN_ROTATION);   // Ajusta a rotação da tela conforme definido
 
@@ -51,28 +105,15 @@ int main() {
     gfx_drawBitmap(26,  77, image_left_btn,  53, 77, 0xFFFF);
     gfx_drawBitmap(247, 70, image_right_btn, 61, 90, 0xFFFF);
 
+    int motorStep = 0;
+    int motorTick = 0;
+    int animDirection = 0;   // 0 = parado, 1 = esquerda, 2 = direita
+    int animTick = 0;
+    int leftAnimState = 0;
+    int rightAnimState = 0;
     bool touchWasDown = false;
-    bool isPlaying = false; // Indica se estamos jogando
 
     while (true) {
-        // Verifica mensagens do Genius
-        if (multicore_fifo_rvalid()) {
-            uint32_t msg = multicore_fifo_pop_blocking();
-            if (msg == MSG_GAME_OVER) {
-                isPlaying = false;
-                gfx_fillRect(0, 0, width, height, 0x0000);
-                gfx_drawText(width/6, 120, "GAME OVER");
-            } else if (msg == MSG_UPDATE_SCORE) {
-                uint32_t val = multicore_fifo_pop_blocking();
-                char str[20];
-                snprintf(str, sizeof(str), "Score: %lu", val);
-                gfx_fillRect(0, 0, width, 50, 0x0000);
-                gfx_drawText(20, 10, str);
-            }
-        }
-        // Gerencia feedbacks (som, led) de formar não bloqueante
-        process_feedback();
-
         int touchRawX, touchRawY;               // Variaveis para armazenar as coordenadas brutas do toque
         int screenTouchX, screenTouchY  = 0;    // Variaveis para armazenar as coordenadas do toque transformadas para a tela
 
@@ -94,18 +135,10 @@ int main() {
                     screenTouchX >= 247 && screenTouchX <= (247 + 61) &&
                     screenTouchY >= 70 && screenTouchY <= (70 + 90);
 
-                if (onLeft) {
+                if (onLeft)
                     animDirection = 1;
-                    if (!isPlaying) {
-                        isPlaying = true;
-                        multicore_fifo_push_blocking(CMD_START_GAME);
-                        multicore_fifo_push_blocking(time_us_32());
-                        multicore_fifo_push_blocking(LEVEL_HARD); // Inicia Díficil pelo LCD (botão eq)
-                    }
-                }
-                else if (onRight) {
+                else if (onRight)
                     animDirection = 2;
-                }
             }
         }
         touchWasDown = touchDetected;

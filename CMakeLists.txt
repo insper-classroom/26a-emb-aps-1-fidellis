@@ -37,6 +37,8 @@ pico_sdk_init()
 
 add_executable(ili9341
     main.c
+    feedback.c
+    genius.c
 
     # ILI9341 driver
     tft_lcd_ili9341/ili9341/ili9341.c
@@ -67,6 +69,7 @@ target_link_libraries(ili9341
     pico_stdlib
     hardware_spi
     hardware_adc
+    hardware_pwm
 )
 
 # =========================
