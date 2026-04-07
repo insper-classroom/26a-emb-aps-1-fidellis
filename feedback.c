@@ -4,17 +4,17 @@
 #include "hardware/clocks.h"
 
 // Definições dos pinos (movidas da main)
-const int BLUE_LED = 15;
-const int RED_LED = 14;
-const int GREEN_LED = 13;
-const int YELLOW_LED = 12;
+const int BLUE_LED = 2;
+const int RED_LED = 3;
+const int GREEN_LED = 11;
+const int YELLOW_LED = 4;
 
-const int BLUE_BUTTON = 11;
-const int RED_BUTTON = 10;
-const int GREEN_BUTTON = 9;
-const int YELLOW_BUTTON = 8;
+const int BLUE_BUTTON = 8;
+const int RED_BUTTON = 6;
+const int GREEN_BUTTON = 12;
+const int YELLOW_BUTTON = 5;
 
-const int BUZZER = 7;
+const int BUZZER = 10;
 
 #include "genius.h" // For masks
 // Variáveis voláteis (flags)
