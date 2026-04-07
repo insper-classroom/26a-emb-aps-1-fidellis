@@ -65,7 +65,18 @@ void genius_core1_main() {
                 
             case STATE_WAITING_INPUT: {
                 uint8_t current_expected_mask = sequence[step_index];
-                uint8_t user_input = get_user_input_blocking(current_expected_mask); 
+                bool timed_out = false;
+                uint32_t input_timeout_ms = 5000;
+
+                if (difficulty == LEVEL_MEDIUM) input_timeout_ms = 3500;
+                else if (difficulty == LEVEL_HARD) input_timeout_ms = 2500;
+
+                uint8_t user_input = get_user_input_with_timeout(current_expected_mask, input_timeout_ms, &timed_out);
+
+                if (timed_out) {
+                    state = STATE_GAME_OVER;
+                    break;
+                }
                 
                 if (user_input == current_expected_mask) {
                     // Certo

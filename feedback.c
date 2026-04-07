@@ -168,7 +168,14 @@ void flush_button_inputs(void) {
 }
 
 // Retorna uma máscara do que o usuário inseriu (se duplo, espera para juntar)
-uint8_t get_user_input_blocking(uint8_t expected_mask) {
+// timeout_ms == 0 significa espera infinita.
+uint8_t get_user_input_with_timeout(uint8_t expected_mask, uint32_t timeout_ms, bool *timed_out) {
+    uint32_t start_us = time_us_32();
+
+    if (timed_out) {
+        *timed_out = false;
+    }
+
     uint8_t collected = 0;
     while(collected == 0) {
         if (btn_blue_flag) collected |= COLOR_BLUE;
@@ -187,10 +194,26 @@ uint8_t get_user_input_blocking(uint8_t expected_mask) {
             }
             break;
         }
+
+        if (timeout_ms > 0) {
+            uint32_t elapsed_us = time_us_32() - start_us;
+            if (elapsed_us >= timeout_ms * 1000u) {
+                if (timed_out) {
+                    *timed_out = true;
+                }
+                flush_button_inputs();
+                return 0;
+            }
+        }
+
         sleep_ms(5); 
     }
     flush_button_inputs();
     return collected;
+}
+
+uint8_t get_user_input_blocking(uint8_t expected_mask) {
+    return get_user_input_with_timeout(expected_mask, 0, NULL);
 }
 
 void play_game_over_sound(void) {

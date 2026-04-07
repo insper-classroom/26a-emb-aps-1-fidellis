@@ -67,6 +67,7 @@ target_include_directories(ili9341 PRIVATE
 
 target_link_libraries(ili9341
     pico_stdlib
+    pico_multicore
     hardware_spi
     hardware_adc
     hardware_pwm

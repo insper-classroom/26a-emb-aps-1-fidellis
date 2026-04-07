@@ -1,0 +1,366 @@
+The target system is: PICO -  - cortex-m33
+The host system is: Linux - 6.8.0-106-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc 
+Build flags: ;-mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ 
+Build flags: ;-mcpu=cortex-m33;-mthumb;-march=armv8-m.main+fp+dsp;-mfloat-abi=softfp;-mcmse
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-none-eabi-gcc (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 14.2.1 20241119
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_31032/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_31032.dir/build.make CMakeFiles/cmTC_31032.dir/build
+gmake[1]: Entering directory '/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o
+/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -std=gnu11 -o CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_31032.dir/'
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_31032.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -std=gnu11 -version -o /tmp/cc6eHmrD.s
+GNU C11 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
+	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
+ignoring nonexistent directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
+End of search list.
+Compiler executable checksum: e89038eedc6170daa7e4ecd67cd2deb0
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_31032.dir/'
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o /tmp/cc6eHmrD.s
+GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
+COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_31032.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31032.dir/link.txt --verbose=1
+/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o -o cmTC_31032.elf 
+Using built-in specs.
+COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc
+COLLECT_LTO_WRAPPER=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper
+Target: arm-none-eabi
+Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_31032.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_31032.elf.'
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc72ivW5.res --sysroot=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_31032.elf -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o
+/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_31032.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_31032.elf.'
+gmake[1]: Leaving directory '/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include]
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include]
+  implicit include dirs: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_31032/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_31032.dir/build.make CMakeFiles/cmTC_31032.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -std=gnu11 -o CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)']
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_31032.dir/']
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_31032.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -std=gnu11 -version -o /tmp/cc6eHmrD.s]
+  ignore line: [GNU C11 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [Compiler executable checksum: e89038eedc6170daa7e4ecd67cd2deb0]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_31032.dir/']
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o /tmp/cc6eHmrD.s]
+  ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
+  ignore line: [COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-std=gnu11' '-o' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_31032.elf]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31032.dir/link.txt --verbose=1]
+  ignore line: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o -o cmTC_31032.elf ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)']
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
+  ignore line: [COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_31032.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_31032.elf.']
+  link line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc72ivW5.res --sysroot=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_31032.elf -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o]
+    arg [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc72ivW5.res] ==> ignore
+    arg [--sysroot=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_31032.elf] ==> ignore
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib]
+    arg [--build-id=none] ==> ignore
+    arg [CMakeFiles/cmTC_31032.dir/CMakeCCompilerABI.c.o] ==> ignore
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib]
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cdfd8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cdfd8.dir/build.make CMakeFiles/cmTC_cdfd8.dir/build
+gmake[1]: Entering directory '/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o
+/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++
+Target: arm-none-eabi
+Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_cdfd8.dir/'
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cdfd8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /tmp/cc33f8MH.s
+GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)
+	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/backward"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
+ignoring nonexistent directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
+ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/backward
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
+End of search list.
+Compiler executable checksum: 761a3593099dc796ffc611563edb6c2e
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_cdfd8.dir/'
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc33f8MH.s
+GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
+COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_cdfd8.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdfd8.dir/link.txt --verbose=1
+/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl,--build-id=none -nostdlib  -v CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cdfd8.elf 
+Using built-in specs.
+COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++
+COLLECT_LTO_WRAPPER=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper
+Target: arm-none-eabi
+Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)'
+Thread model: single
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 
+COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_cdfd8.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_cdfd8.elf.'
+ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsL12lP.res --sysroot=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_cdfd8.elf -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o
+/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 00008000
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_cdfd8.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_cdfd8.elf.'
+gmake[1]: Leaving directory '/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1]
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp]
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/backward]
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+    add: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1]
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp]
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/backward] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/backward]
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include]
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+  collapse include dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include]
+  implicit include dirs: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/backward;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include-fixed;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cdfd8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cdfd8.dir/build.make CMakeFiles/cmTC_cdfd8.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build_local/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++   -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse    -v -o CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)']
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_cdfd8.dir/']
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1plus -quiet -v -imultilib thumb/v8-m.main+fp/softfp -iprefix /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cdfd8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-m33 -mthumb -mfloat-abi=softfp -mcmse -mlibarch=armv8-m.main+dsp+fp -march=armv8-m.main+dsp+fp -version -o /tmp/cc33f8MH.s]
+  ignore line: [GNU C++17 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) version 14.2.1 20241119 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/backward"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"]
+  ignore line: [ignoring duplicate directory "/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/arm-none-eabi/thumb/v8-m.main+fp/softfp]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include/c++/14.2.1/backward]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [Compiler executable checksum: 761a3593099dc796ffc611563edb6c2e]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_cdfd8.dir/']
+  ignore line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv8-m.main+dsp+fp -mfloat-abi=softfp -meabi=5 -o CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc33f8MH.s]
+  ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119]
+  ignore line: [COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-v' '-o' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_cdfd8.elf]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdfd8.dir/link.txt --verbose=1]
+  ignore line: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++ -mcpu=cortex-m33 -mthumb -march=armv8-m.main+fp+dsp -mfloat-abi=softfp -mcmse  -Wl --build-id=none -nostdlib  -v CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cdfd8.elf ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-14/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-headers=yes --with-gnu-ld --with-native-system-header-dir=/include --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-14/build-arm-none-eabi/install/arm-none-eabi --with-bugurl=https://bugs.linaro.org/ --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)']
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.1 20241119 (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) ]
+  ignore line: [COMPILER_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m33' '-mthumb'  '-mfloat-abi=softfp' '-mcmse' '-nostdlib' '-v' '-o' 'cmTC_cdfd8.elf' '-mlibarch=armv8-m.main+dsp+fp' '-march=armv8-m.main+dsp+fp' '-dumpdir' 'cmTC_cdfd8.elf.']
+  link line: [ /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2 -plugin /home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so -plugin-opt=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsL12lP.res --sysroot=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi -X -o cmTC_cdfd8.elf -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1 -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib -L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib --build-id=none CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o]
+    arg [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../libexec/gcc/arm-none-eabi/14.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccsL12lP.res] ==> ignore
+    arg [--sysroot=/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cdfd8.elf] ==> ignore
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib]
+    arg [-L/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib]
+    arg [--build-id=none] ==> ignore
+    arg [CMakeFiles/cmTC_cdfd8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib]
+  collapse library dir [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/bin/../arm-none-eabi/lib] ==> [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib]
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: [/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib/thumb/v8-m.main+fp/softfp;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/lib/gcc;/home/gabriel/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/lib]
+  implicit fwks: []
+
+

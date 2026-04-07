@@ -30,6 +30,7 @@ void play_feedback_mask(uint8_t mask, int duration_ms);
 // Funcções bloqueantes de controle e leitura
 void flush_button_inputs(void);
 uint8_t get_user_input_blocking(uint8_t expected_mask);
+uint8_t get_user_input_with_timeout(uint8_t expected_mask, uint32_t timeout_ms, bool *timed_out);
 void play_game_over_sound(void);
 
 #endif // FEEDBACK_H
