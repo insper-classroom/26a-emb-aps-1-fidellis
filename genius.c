@@ -90,7 +90,8 @@ void genius_core1_main() {
                         
                         current_level++;
                         if (current_level >= MAX_SEQUENCE) {
-                            // Win? Or endless
+                            multicore_fifo_push_blocking(MSG_GAME_WIN);
+                            state = STATE_WAITING_START;
                         } else {
                             sequence[current_level] = random_step();
                             sleep_ms(500);

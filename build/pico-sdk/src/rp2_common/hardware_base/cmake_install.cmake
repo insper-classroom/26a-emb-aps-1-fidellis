@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-pra-4-expert-gab-correia/build/pico-sdk/src/rp2_common/hardware_base/install_local_manifest.txt"
+  file(WRITE "/home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build/pico-sdk/src/rp2_common/hardware_base/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -90,6 +90,5 @@ CMakeFiles/ili9341.dir/main.c.o: \
  /home/gabriel/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_adc/include/hardware/adc.h \
  /home/gabriel/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_structs/include/hardware/structs/adc.h \
  /home/gabriel/.pico-sdk/sdk/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/adc.h \
- /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/image_bitmap.h \
  /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/feedback.h \
  /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/genius.h

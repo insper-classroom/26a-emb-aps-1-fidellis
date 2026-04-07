@@ -29,6 +29,7 @@ typedef enum {
 #define MSG_GAME_READY 0x10
 #define MSG_UPDATE_SCORE 0x11
 #define MSG_GAME_OVER 0x12
+#define MSG_GAME_WIN 0x13
 
 // Tipos de mensagens via FIFO para o Core 1
 #define CMD_START_GAME 0xA0

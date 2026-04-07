@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-pra-4-expert-gab-correia/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/gabriel/insper/quinto_semestre/embarcados/26a-emb-aps-1-fidellis/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb
