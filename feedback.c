@@ -23,6 +23,15 @@ volatile bool btn_red_flag = false;
 volatile bool btn_green_flag = false;
 volatile bool btn_yellow_flag = false;
 
+static volatile bool input_timeout_expired = false;
+
+static int64_t input_timeout_alarm_callback(alarm_id_t id, void *user_data) {
+    (void)id;
+    (void)user_data;
+    input_timeout_expired = true;
+    return 0;
+}
+
 // Estado interno do feedback
 static int active_feedback = 0; // 0=Nenhum, 1=Azul, 2=Vermelho, 3=Verde, 4=Amarelo
 static int feedback_timer = 0;  // Contador regressivo para o feedback (para não bloquear a main)
@@ -170,14 +179,33 @@ void flush_button_inputs(void) {
 // Retorna uma máscara do que o usuário inseriu (se duplo, espera para juntar)
 // timeout_ms == 0 significa espera infinita.
 uint8_t get_user_input_with_timeout(uint8_t expected_mask, uint32_t timeout_ms, bool *timed_out) {
-    uint32_t start_us = time_us_32();
+    alarm_id_t timeout_alarm_id = 0;
+    bool timeout_alarm_scheduled = false;
 
     if (timed_out) {
         *timed_out = false;
     }
 
+    input_timeout_expired = false;
+    if (timeout_ms > 0) {
+        timeout_alarm_id = add_alarm_in_ms(timeout_ms, input_timeout_alarm_callback, NULL, false);
+        timeout_alarm_scheduled = (timeout_alarm_id >= 0);
+    }
+
     uint8_t collected = 0;
     while(collected == 0) {
+        if (timeout_ms > 0 && input_timeout_expired) {
+            if (timed_out) {
+                *timed_out = true;
+            }
+            if (timeout_alarm_scheduled) {
+                cancel_alarm(timeout_alarm_id);
+            }
+            input_timeout_expired = false;
+            flush_button_inputs();
+            return 0;
+        }
+
         if (btn_blue_flag) collected |= COLOR_BLUE;
         if (btn_red_flag) collected |= COLOR_RED;
         if (btn_green_flag) collected |= COLOR_GREEN;
@@ -192,22 +220,30 @@ uint8_t get_user_input_with_timeout(uint8_t expected_mask, uint32_t timeout_ms, 
                 if (btn_green_flag) collected |= COLOR_GREEN;
                 if (btn_yellow_flag) collected |= COLOR_YELLOW;
             }
-            break;
-        }
 
-        if (timeout_ms > 0) {
-            uint32_t elapsed_us = time_us_32() - start_us;
-            if (elapsed_us >= timeout_ms * 1000u) {
+            if (timeout_ms > 0 && input_timeout_expired) {
                 if (timed_out) {
                     *timed_out = true;
                 }
+                if (timeout_alarm_scheduled) {
+                    cancel_alarm(timeout_alarm_id);
+                }
+                input_timeout_expired = false;
                 flush_button_inputs();
                 return 0;
             }
+
+            break;
         }
 
         sleep_ms(5); 
     }
+
+    if (timeout_alarm_scheduled) {
+        cancel_alarm(timeout_alarm_id);
+    }
+    input_timeout_expired = false;
+
     flush_button_inputs();
     return collected;
 }

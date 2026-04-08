@@ -36,7 +36,7 @@ pico_sdk_init()
 # =========================
 
 add_executable(ili9341
-    main.c
+    main/main.c
     feedback.c
     genius.c
 
