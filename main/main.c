@@ -136,7 +136,6 @@ int main() {
     ui_state_t ui_state = UI_START;
     bool touchWasDown = false;
     bool isPlaying = false;
-    bool victory = false;
     int current_score = 0;
     int selected_difficulty = LEVEL_MEDIUM;
 
@@ -146,9 +145,8 @@ int main() {
             uint32_t msg = multicore_fifo_pop_blocking();
             if (msg == MSG_GAME_OVER) {
                 isPlaying = false;
-                victory = false;
                 ui_state = UI_RESULT;
-                draw_result_screen(victory, current_score);
+                draw_result_screen(false, current_score);
             } else if (msg == MSG_UPDATE_SCORE) {
                 uint32_t val = multicore_fifo_pop_blocking();
                 current_score = (int)val;
@@ -157,9 +155,8 @@ int main() {
                 }
             } else if (msg == MSG_GAME_WIN) {
                 isPlaying = false;
-                victory = true;
                 ui_state = UI_RESULT;
-                draw_result_screen(victory, current_score);
+                draw_result_screen(true, current_score);
             }
         }
 
@@ -192,7 +189,6 @@ int main() {
                         uint32_t seed = make_seed_from_touch(screenTouchX, screenTouchY);
                         selected_difficulty = choose_easy ? LEVEL_EASY : (choose_medium ? LEVEL_MEDIUM : LEVEL_HARD);
                         current_score = 0;
-                        victory = false;
                         isPlaying = true;
                         ui_state = UI_PLAYING;
                         draw_game_screen(current_score, selected_difficulty);
